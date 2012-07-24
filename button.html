@@ -10,7 +10,7 @@
 <div id="disp"><div></div></div>
 
 <script>
-var socket = io.connect('http://snsk.net:8888');
+var socket = io.connect('http://snsk.net:8888');//over write to your domain
 socket.on('myevent', function (data) {
     document.getElementById("hit").play();
 });
